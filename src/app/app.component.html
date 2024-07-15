@@ -1,0 +1,65 @@
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<nav class="nav-menu">
+
+  <a routerLink="/margarita"> Margarita</a>
+  <a routerLink="/tequila">Tequila</a>
+  <a routerLink="/vodka">Vodka </a>
+  <a routerLink="/wine">Vino</a>
+</nav>
+<div class="header-img">
+  <img src="https://img.freepik.com/free-photo/top-view-fresh-black-grapes-wine-glass-wine-bottle-dark-background_140725-144805.jpg?t=st=1721005653~exp=1721009253~hmac=b468805d35313d48ebcd5773d6d4af81b7982a56c9ff30a38bbc10983ddadbee&w=1800" alt="">
+
+</div>
+
+<header class="bg-gray-800 text-white p-6 text-center">
+  <h1 class="text-2xl font-extrabold">Bebidas</h1>
+</header>
+
+
+<div class="contenedor-flex">
+  <router-outlet></router-outlet>
+  </div>
+  <div class="about-us-section bg-gray-100 p-6 my-6 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold mb-4">Acerca de Nosotros</h2>
+    <p class="text-lg">Somos una empresa dedicada a ofrecer las mejores bebidas alcohólicas del mercado. Nuestra selección incluye vinos, tequilas, vodkas, y margaritas de la más alta calidad.</p>
+    <p class="text-lg">Nuestro objetivo es proporcionar una experiencia única y placentera a nuestros clientes, asegurándonos de que cada producto que ofrecemos cumpla con los más altos estándares de excelencia.</p>
+  </div>
+
+  <section class="contact-section">
+    <h2>Contáctanos</h2>
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+<footer>
+  <div class="footer-contenedor">
+      <div class="socialIcons">
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://x.com/login?mx=2"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@cmtorrealba"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      </div>
+
+</footer>

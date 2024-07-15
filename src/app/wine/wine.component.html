@@ -1,0 +1,19 @@
+
+
+<section>
+  @for(Cocteles of cocteles; track $index){
+
+    <h2>{{Cocteles.strDrink}}</h2>
+    <h3>Categoria: {{Cocteles.strCategory}}</h3>
+    <p><span>Instrucciones:</span>{{Cocteles.strInstrucciones}}</p>
+    <h4>Ingredientes</h4>
+    <li>{{Cocteles.strIngredient1}}</li>
+    <li>{{Cocteles.strIngredient2}}</li>
+    <li>{{Cocteles.strIngredient3}}</li>
+    <img [src]="Cocteles.strDrinkThumb" alt="">
+
+
+
+  }
+</section>
+<br>
